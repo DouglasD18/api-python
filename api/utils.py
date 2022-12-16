@@ -1,3 +1,4 @@
+# Que verifica a regra de caracteres especiais
 def min_special_chars(password: str, rule: int):
     characters = "!@#$%^&*()-+\\/{}[]"
     count = 0
@@ -8,12 +9,14 @@ def min_special_chars(password: str, rule: int):
         return "minDigit"
 
 
+# Que verifica a regra do tamanho mínimo da senha
 def min_size(password: str, rule: int):
     length = len(password)
     if length < rule:
         return "minSize"
 
 
+# Que verifica a regra de mínimo de letras maiusculas da senha
 def min_uppercase(password: str, rule: int):
     count = 0
     for caracter in password:
@@ -23,6 +26,7 @@ def min_uppercase(password: str, rule: int):
         return "minUppercase"
 
 
+# Que verifica a regra de mínimo de letras minusculas da senha
 def min_lowercase(password: str, rule: int):
     count = 0
     for caracter in password:
@@ -32,6 +36,7 @@ def min_lowercase(password: str, rule: int):
         return "minLowercase"
 
 
+# Que verifica a regra de quantidade mínima de dígitos na senha
 def min_digit(password: str, rule: int):
     count = 0
     for caracter in password:
@@ -41,6 +46,7 @@ def min_digit(password: str, rule: int):
         return "minDigit"
 
 
+# Que verifica se a senha tem caracteres repetidos consecutivos
 def no_repeted(password: str):
     count = 0
     index = 0

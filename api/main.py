@@ -5,11 +5,13 @@ from api.utils import (min_digit, min_lowercase, min_size,
                        min_special_chars, min_uppercase, no_repeted)
 
 
+# Classe que serve como base para as regras individualmente
 class Rule(BaseModel):
     rule: str
     value: int
 
 
+# Classe que serve como base para o corpo da requisição recebido
 class Body(BaseModel):
     password: str
     rules: List[Rule]
@@ -18,6 +20,8 @@ class Body(BaseModel):
 app = FastAPI()
 
 
+# Método post recebendo o body e fazendo a verificação
+# das regras para chamar o devido método de verificação importado
 @app.post("/verify")
 async def isVerified(body: Body):
     password = body.password
