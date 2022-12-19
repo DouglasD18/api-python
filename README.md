@@ -37,6 +37,11 @@ python3 -m venv .venv && source .venv/bin/activate && pip install -r requirement
 uvicorn api.main:app --port=8080
 ```
 
+## Testando as funções da aplicação
+```
+python3 -m pytest
+```
+
 ## Link da documentação da aplicação
 
 http://localhost:8080/docs

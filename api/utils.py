@@ -6,7 +6,7 @@ def min_special_chars(password: str, rule: int):
         if caracter in characters:
             count += 1
     if count < rule:
-        return "minDigit"
+        return "minSpecialChars"
 
 
 # Que verifica a regra do tamanho mínimo da senha
