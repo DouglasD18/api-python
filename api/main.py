@@ -23,7 +23,7 @@ app = FastAPI()
 # Método post recebendo o body e fazendo a verificação
 # das regras para chamar o devido método de verificação importado
 @app.post("/verify")
-async def isVerified(body: Body):
+async def verify(body: Body):
     password = body.password
     rules = body.rules
     failed = []
