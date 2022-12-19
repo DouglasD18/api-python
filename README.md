@@ -4,6 +4,7 @@
 Aplicação para verificação de senha enviada para a rota /verify em um json contendo a senha e as regras a serem seguidas.
 
 ## Aplicação rodando
+
 ```
 ![](./demonstration/request.png)
 ´´´
