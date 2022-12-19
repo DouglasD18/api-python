@@ -13,30 +13,30 @@ def test_min_special():
 
 
 def test_min_digit():
-    "Testa o retorno de min_special_chars"
+    "Testa o retorno de min_digit"
     value = characters()
     assert min_digit(value, 4) == "minDigit"
 
 
 def test_min_lowercase():
-    "Testa o retorno de min_special_chars"
+    "Testa o retorno de min_lowercase"
     value = characters()
     assert min_lowercase(value, 15) == "minLowercase"
 
 
 def test_min_size():
-    "Testa o retorno de min_special_chars"
+    "Testa o retorno de min_size"
     value = characters()
     assert min_size(value, 15) is None
 
 
 def test_min_uppercase():
-    "Testa o retorno de min_special_chars"
+    "Testa o retorno de min_uppercase"
     value = characters()
     assert min_uppercase(value, 4) == "minUppercase"
 
 
 def test_no_repeat():
-    "Testa o retorno de min_special_chars"
+    "Testa o retorno de no_repeat"
     value = characters()
     assert no_repeted(value) is None
